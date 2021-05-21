@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  config-server:
+    image: mjswampup2021.jfrog.io/default-docker-virtual/spring-petclinic-config-server:1.0.0
+    x-aws-pull_credentials: ${DOCKER_PULL_SECRET}
+    container_name: config-server
+    mem_limit: 512M
+    ports:
+     - 8888:8888
+    networks:
+     - petclinic
+
+networks:
+  petclinic:

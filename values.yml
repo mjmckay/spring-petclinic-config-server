@@ -1,0 +1,16 @@
+Artifactory:
+  server: mjswampup2021.jfrog.io
+  intName: petclinicArtifactory
+  devRepo: default-docker-local
+  prodRepo: default-docker-prod-local
+  creds: awsEcsDockerComposePullSecrets
+GitHub:
+  path: mjmckay/spring-petclinic-config-server
+  gitProvider: petclinicConfig
+AWS:
+  intName: mjmckayAws
+  region: us-east-1
+app:
+  dockerImageName: mjswampup2021.jfrog.io/spring-petclinic-config-server
+  dockerFileLocation: docker
+  buildName: ecs-docker-compose-spring-petclinic-config
