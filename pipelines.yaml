@@ -65,7 +65,7 @@ pipelines:
           inputSteps:
             - name: app_docker_build
           outputResources:
-            - name: app_image
+            - name: config_image
             - name: app_build_info
       - name: publish_build_info
         type: PublishBuildInfo

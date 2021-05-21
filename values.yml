@@ -11,6 +11,6 @@ AWS:
   intName: mjmckayAws
   region: us-east-1
 app:
-  dockerImageName: mjswampup2021.jfrog.io/spring-petclinic-config-server
+  dockerImageName: mjswampup2021.jfrog.io/default-docker-local/spring-petclinic-config-server:1.0.0
   dockerFileLocation: docker
   buildName: ecs-docker-compose-spring-petclinic-config
